@@ -1,0 +1,57 @@
+/*
+********************************
+*
+*  WEATHER FORECAST STYLE
+*
+*********************************
+*/
+
+mat-card {
+  &.weather-forecast-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+mat-card {
+  mat-card-header {
+    justify-content: center;
+  }
+
+  .header-actions {
+    display: flex;
+    flex-wrap: wrap;
+
+    button {
+      flex: 1 1 auto;
+      margin: 1rem 0.5rem 1rem ;
+
+      &.btn-add_location {
+        color: $base-red;
+      }
+
+      &.btn-my_location {
+        color: $base-black;
+      }
+    }
+  }
+}
+
+mat-card-content {
+  &.forecast-container {
+    margin: 1rem 0;
+  }
+}
+
+
+mat-card {
+  &.forecast-card {
+    width: 420px;
+    z-index: map-get($map: $z-indexes, $key: 'default');
+    @media (max-width: 460px) {
+      width: calc(100vw - 64px);
+    }
+  }
+}
+

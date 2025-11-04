@@ -1,0 +1,22 @@
+/***********************************
+
+  COMPONENTS STYLES
+
+************************************/
+
+@import './sidenav';
+@import './weather-controller';
+@import './weather-forecast';
+@import './day-forecast';
+@import './weather-details';
+@import './page-not-found';
+
+// Global style for all Material cards
+.mat-mdc-card {
+  background-color: change-color($base-white, $alpha: 0.60);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid change-color($base-white, $alpha: 0.7);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+}
